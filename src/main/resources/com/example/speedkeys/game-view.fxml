@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="540.0" prefWidth="720.0"
+            styleClass="juego" stylesheets="@../../../css/imagenes.css"
+            xmlns="http://javafx.com/javafx/24.0.1" xmlns:fx="http://javafx.com/fxml/1"
+            fx:controller="com.example.speedkeys.GameController">
+    <children>
+        <ImageView fitHeight="115.0" fitWidth="547.0" layoutX="87.0" layoutY="414.0" pickOnBounds="true" preserveRatio="true">
+            <image>
+                <Image url="@../../../imagenes/10.png" />
+            </image>
+        </ImageView>
+
+        <Label fx:id="lblWord" alignment="CENTER" layoutX="196.0" layoutY="199.0"
+               prefHeight="143.0" prefWidth="329.0" text="Label" textFill="WHITE">
+            <font>
+                <Font name="Poor Richard" size="50.0" />
+            </font>
+        </Label>
+
+        <TextField fx:id="txtInput" alignment="CENTER" layoutX="156.0" layoutY="427.0"
+                   styleClass="texto" stylesheets="@../../../css/imagenes.css">
+            <font>
+                <Font name="Poor Richard" size="32.0" />
+            </font>
+        </TextField>
+
+        <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="37.0" layoutY="35.0" pickOnBounds="true" preserveRatio="true">
+            <image>
+                <Image url="@../../../imagenes/11.png" />
+            </image>
+        </ImageView>
+        <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="493.0" layoutY="35.0" pickOnBounds="true" preserveRatio="true">
+            <image>
+                <Image url="@../../../imagenes/11.png" />
+            </image>
+        </ImageView>
+
+        <Label fx:id="lblTime" alignment="CENTER" layoutX="572.0" layoutY="45.0"
+               prefHeight="65.0" prefWidth="86.0" text="10" textFill="WHITE">
+            <font>
+                <Font name="Poor Richard" size="50.0" />
+            </font>
+        </Label>
+        <ImageView fitHeight="59.0" fitWidth="57.0" layoutX="525.0" layoutY="49.0" pickOnBounds="true" preserveRatio="true">
+            <image>
+                <Image url="@../../../imagenes/12.png" />
+            </image>
+        </ImageView>
+
+        <Label fx:id="lblLevel" alignment="CENTER" layoutX="55.0" layoutY="48.0"
+               prefHeight="59.0" prefWidth="164.0" text="1" textFill="WHITE">
+            <font>
+                <Font name="Poor Richard" size="40.0" />
+            </font>
+        </Label>
+
+        <!-- Score display (you can place where you want) -->
+        <Label fx:id="lblScore" alignment="CENTER_LEFT" layoutX="284.0" layoutY="52.0"
+               prefHeight="40.0" prefWidth="200.0" text="Puntos: 0" textFill="WHITE">
+            <font>
+                <Font name="Poor Richard" size="32.0" />
+            </font>
+        </Label>
+    </children>
+</AnchorPane>
